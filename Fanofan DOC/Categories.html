@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | FANoFAN Categories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .specs-table td {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .specs-table td:first-child {
+            color: var(--accent);
+            font-weight: 600;
+            width: 40%;
+        }
+
+        .price-tag {
+            display: block;
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .anchor-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .anchor-link {
+            padding: 0.5rem 1.5rem;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            transition: var(--transition);
+        }
+
+        .anchor-link:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/FANoFANlogo.png" alt="FANoFAN Logo">
+            <span class="logo-text">FANoFAN</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Ceiling Fans.html">Ceiling Fans</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Table Fans.html">Table Fans</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Exhaust Fans.html">Exhaust Fans</a></li>
+                    </ul>
+                </li>
+                <a href="Gallery.html">Gallery</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">Product Catalog</h1>
+            <div class="anchor-nav">
+                <a href="#ceiling" class="anchor-link">Ceiling Fans</a>
+                <a href="#table" class="anchor-link">Table Fans</a>
+                <a href="#exhaust" class="anchor-link">Exhaust Fans</a>
+            </div>
+
+            <h2 id="ceiling" class="section-title" style="font-size: 1.8rem; text-align: left;">Ceiling Fans</h2>
+            <div class="categories-wrap" style="margin-bottom: 5rem;">
+                <div class="cat-card">
+                    <img src="img/G2.webp" alt="Aura Pro" class="cat-img">
+                    <div class="cat-body">
+                        <h3>Max BreezePro Ceiling Fan</h3>
+                        <p>High-speed motor, energy-efficient design, 3 durable blades, silent operation, remote
+                            control, modern style, strong airflow.</p>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Sweep</td>
+                                <td>1200 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>35W (BLDC)</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>380 RPM</td>
+                            </tr>
+                            <tr>
+                                <td>Air Delivery</td>
+                                <td>235 CMM</td>
+                            </tr>
+                        </table>
+                        <span class="price-tag">$249.00</span>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="img/G4.avif" alt="Vortex Elite" class="cat-img">
+                    <div class="cat-body">
+                        <h3>CoolWind Ultra Fan</h3>
+                        <p>Powerful copper motor, low electricity consumption, aerodynamic blades, quiet
+                            performance,durable body, rust-resistant coating.</p>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Sweep</td>
+                                <td>1400 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>75W</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>320 RPM</td>
+                            </tr>
+                            <tr>
+                                <td>Air Delivery</td>
+                                <td>250 CMM</td>
+                            </tr>
+                        </table>
+                        <span class="price-tag">$299.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <h2 id="table" class="section-title" style="font-size: 1.8rem; text-align: left;">Table Fans</h2>
+            <div class="categories-wrap" style="margin-bottom: 5rem;">
+                <div class="cat-card">
+                    <img src="img/G5.avif" alt="Breeze Go" class="cat-img">
+                    <div class="cat-body">
+                        <h3>BreezeLite Table Fan</h3>
+                        <p>Compact design, powerful motor, three speed settings, oscillation feature, quiet performance,
+                            durable blades, stable base.</p>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Sweep</td>
+                                <td>400 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>55W</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>1350 RPM</td>
+                            </tr>
+                            <tr>
+                                <td>Oscillation</td>
+                                <td>90 Degrees</td>
+                            </tr>
+                        </table>
+                        <span class="price-tag">$89.00</span>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="img/G44.webp" alt="Typhoon Desk" class="cat-img">
+                    <div class="cat-body">
+                        <h3>CoolDesk Pro Fan</h3>
+                        <p>High airflow motor, adjustable tilt head, three speeds, silen
+                            Full metal body construction for durability and high airflow.</p>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Sweep</td>
+                                <td>450 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>80W</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>2100 RPM</td>
+                            </tr>
+                            <tr>
+                                <td>Warranty</td>
+                                <td>5 Years</td>
+                            </tr>
+                        </table>
+                        <span class="price-tag">$129.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="exhaust" class="section-title" style="font-size: 1.8rem; text-align: left;">Exhaust Fans</h2>
+            <div class="categories-wrap">
+                <div class="cat-card">
+                    <img src="img/G8.avif" alt="Ventra X" class="cat-img">
+                    <div class="cat-body">
+                        <h3>AirVent Pro Exhaust Fan</h3>
+                        <p>Powerful motor, strong ventilation, low noise, durable body, energy efficient.</p>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Sweep</td>
+                                <td>250 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>45W</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>1300 RPM</td>
+                            </tr>
+                            <tr>
+                                <td>Air suction</td>
+                                <td>800 m3/hr</td>
+                            </tr>
+                        </table>
+                        <span class="price-tag">$59.00</span>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="img/G9.avif" alt="Industrial Flow" class="cat-img">
+                    <div class="cat-body">
+                        <h3>FreshAir Max Exhaust Fan</h3>
+                        <p>High airflow capacity, quiet performance, rust-resistant blades, easy wall installation</p>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Sweep</td>
+                                <td>450 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>120W</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>1400 RPM</td>
+                            </tr>
+                            <tr>
+                                <td>Air suction</td>
+                                <td>3200 m3/hr</td>
+                            </tr>
+                        </table>
+                        <span class="price-tag">$189.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-col">
+                <div class="logo-container" style="margin-bottom: 1.5rem;">
+                    <span class="logo-text">FANoFAN</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">The leading manufacturer of high-performance
+                    cooling systems for residential and industrial use.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigations</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Products</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="Queries.html">Queries & FAQ</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a href="Sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FANoFAN Manufacturing Co. All rights reserved. | Designing the Wind.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | FANoFAN Visuals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lightbox {
+            visibility: hidden;
+            opacity: 0;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            transition: all 0.4s ease;
+        }
+
+        .lightbox:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border: 3px solid var(--accent);
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+            transform: translateY(-50px) scale(0.9);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .lightbox:target img {
+            transform: translateY(0) scale(1);
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: #fff;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/FANoFANlogo.png" alt="FANoFAN Logo">
+            <span class="logo-text">FANoFAN</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Ceiling Fans.html">Ceiling Fans</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Table Fans.html">Table Fans</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Exhaust Fans.html">Exhaust Fans</a></li>
+                    </ul>
+                </li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">Visual Showcase</h1>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 4rem;">A glimpse into our
+                state-of-the-art manufacturing and premium installations.</p>
+
+            <div class="gallery-container">
+                <a href="#img1">
+                    <img src="img/G2.webp" alt="Gallery 1">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img2">
+                    <img src="img/G3.avif" alt="Gallery 2">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img3">
+                    <img src="img/G4.avif" alt="Gallery 3">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img4">
+                    <img src="img/G44.webp" alt="Gallery 4">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img5">
+                    <img src="img/G5.avif" alt="Gallery 5">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img6">
+                    <img src="img/G6.avif" alt="Gallery 6">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img7">
+                    <img src="img/G7.avif" alt="Manufacturing">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img8">
+                    <img src="img/G8.avif" alt="Precision">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img9">
+                    <img src="img/G9.avif" alt="Design">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img10">
+                    <img src="img/G10.avif" alt="Office">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img11">
+                    <img src="img/G11.avif" alt="Space">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+                <a href="#img12">
+                    <img src="img/G12.avif" alt="Tech">
+                    <span class="discount-tag">Special Offer: 25% Discount</span>
+                </a>
+            </div>
+        </section>
+
+
+        <div id="img1" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G2.webp" alt="Gallery 1 Large">
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G3.avif" alt="Gallery 2 Large">
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G4.avif" alt="Gallery 3 Large">
+        </div>
+        <div id="img4" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G44.webp" alt="Gallery 4 Large">
+        </div>
+        <div id="img5" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G5.avif" alt="Gallery 5 Large">
+        </div>
+        <div id="img6" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G6.avif" alt="Gallery 6 Large">
+        </div>
+        <div id="img7" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G7.avif" alt="Gallery 7 Large">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G8.avif" alt="Gallery 8 Large">
+        </div>
+        <div id="img9" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G9.avif" alt="Gallery 9 Large">
+        </div>
+        <div id="img10" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G10.avif" alt="Gallery 10 Large">
+        </div>
+        <div id="img11" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G11.avif" alt="Gallery 11 Large">
+        </div>
+        <div id="img12" class="lightbox">
+            <a href="#_" class="close-lightbox">&times;</a>
+            <img src="img/G12.avif" alt="Gallery 12 Large">
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-col">
+                <div class="logo-container" style="margin-bottom: 1.5rem;">
+                    <span class="logo-text">FANoFAN</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">The leading manufacturer of high-performance
+                    cooling systems for residential and industrial use.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigations</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Products</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="Queries.html">Queries & FAQ</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a href="Sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FANoFAN Manufacturing Co. All rights reserved. | Designing the Wind.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
